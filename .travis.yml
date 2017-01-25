@@ -10,4 +10,6 @@ deploy:
     repo: fable-compiler/fable-arch
 before_script:
 - npm install -g npm@'>=3'
+- curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+- sudo apt-get install -y nodejs
 script: node --version
